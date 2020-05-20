@@ -1,0 +1,46 @@
+body{
+/*  background:green; /* Fundo com a cor verde */
+  background-image:url("https://image.freepik.com/vetores-gratis/fundo-abstrato-azul-formas-geometricas_1035-17545.jpg"); /* Fundo com uma imagem */
+  background-size: auto 100vh; /* Tamanho da imagem de fundo definido na unidade de médida vh que vai ajustar pro tamanho do view, da tela que está sendo usada para ser vista no momento. O valor auto define que a largura é automática e 100vh é como se fosse 100% do preenchimento da altura da imagem. Muito melhor que definir em px */
+  height: 10vh; /*Garanto que o tamanho do body será 100% da altura da tela, para não distorcer a imagem */
+  font: Arial; /*Fonte de todo o texto */
+}
+
+/* Classe criada e que é atributo no html <nav> */
+.menu{
+  background-color: white; 
+}
+
+/* todas as tags <ul> que estão dentro da classe menu */
+.menu ul{
+  display: flex; /* Coloca todos os <li> em uma linha em formato de coluna*/
+  justify-content: space-around; /* Justifica o conteúdo do texto, mas só funciona quando está trabalhando com a propriedade display, acima */
+  
+}
+.menu li{
+  list-style:none; /* Anula a bolinha na frente de cada item <li>*/
+}
+
+/* Links <a> */
+a{
+  text-decoration:none; /* Tira o underline do texto que é link */
+}
+
+/* Link <a> e sua pseudo-classe hover, que é qdo o mouse passa por cima do texto que é link */
+a:hover{
+  text-decoration: underline; /* Ativa o texto para ficar underline */
+}
+
+/* Estilo tanto no <h1> quanto no <h2> */
+.tituloPrincipal, 
+.subtitulo{
+  color: blue; /* Cor da fonte */
+  text-align: center; /* Alinhamento do texto que é centralizado */
+}
+
+/* Formatação só no <h2> */
+.subtitulo{
+  font-style: italic;
+}
+
+/* */
